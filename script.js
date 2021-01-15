@@ -377,3 +377,37 @@ btnSort.addEventListener('click', function (e) {
 // // Divisions
 // console.log(11n / 3n);
 // console.log(10 / 3);
+
+///////////////////////////////////////
+// Creating Dates
+
+// const now = new Date();
+// console.log(now);
+
+// console.log(new Date('December 24, 2015'));
+// console.log(new Date(account1.movementsDates[0]));
+
+// console.log(new Date(2037, 11, 25, 20, 45, 1));
+// console.log(new Date(2037, 11, 35));
+
+// console.log(new Date(0));
+
+// Working with dates
+const future = new Date(2037, 10, 19, 15, 23);
+console.log(future);
+console.log(future.getFullYear());
+console.log(future.getMonth());
+console.log(future.getDate());
+console.log(future.getDay());
+console.log(future.getHours());
+console.log(future.getMinutes());
+console.log(future.getSeconds());
+console.log(future.toISOString());
+console.log(future.getTime());
+
+console.log(new Date(2142256980000));
+
+console.log(Date.now());
+
+future.setFullYear(2040);
+console.log(future);
