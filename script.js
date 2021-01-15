@@ -327,22 +327,53 @@ btnSort.addEventListener('click', function (e) {
 ///////////////////////////////////////
 // The Remainder Operator
 
-console.log(5 % 2); // <= THIS
-console.log(5 / 2);
+// console.log(5 % 2); // <= THIS
+// console.log(5 / 2);
 
-const isEven = n => n % 2 === 0;
-console.log(isEven(8));
-console.log(isEven(28));
-console.log(isEven(123));
+// const isEven = n => n % 2 === 0;
+// console.log(isEven(8));
+// console.log(isEven(28));
+// console.log(isEven(123));
 
-labelBalance.addEventListener('click', function () {
-  const thisArray = [...document.querySelectorAll('.movements__row')];
-  thisArray.forEach(function (row, i) {
-    if (i % 2 === 0) {
-      row.style.backgroundColor = 'orange';
-    }
-    if (i % 3 === 0) {
-      row.style.backgroundColor = 'blue';
-    }
-  });
-});
+// labelBalance.addEventListener('click', function () {
+//   const thisArray = [...document.querySelectorAll('.movements__row')];
+//   thisArray.forEach(function (row, i) {
+//     if (i % 2 === 0) {
+//       row.style.backgroundColor = 'orange';
+//     }
+//     if (i % 3 === 0) {
+//       row.style.backgroundColor = 'blue';
+//     }
+//   });
+// });
+
+///////////////////////////////////////
+// Working with BigInt
+
+// console.log(2 ** 53 - 1);
+// console.log(Number.MAX_SAFE_INTEGER);
+// console.log(2 ** 53 + 1); // Problems
+
+// console.log(425242851484168484165468144184868641486819496841n);
+// console.log(BigInt(425242851484168484165468144184868641486819496841));
+
+// // Operations
+// console.log(10000n + 10000n);
+// console.log(36286372637263726376237263726372632n * 10000000n);
+// console.log(Math.sqrt(16n)); Does not work
+
+// const huge = 20289830237283728378237n;
+// // const num = 23;
+// // console.log(huge * BigInt(num));
+
+// // // Exceptions
+// console.log(20n > 15);
+// console.log(20n === 20);
+// console.log(typeof 20n);
+// console.log(20n == '20');
+
+// console.log(huge + ' is REALLY big!!!');
+
+// // Divisions
+// console.log(11n / 3n);
+// console.log(10 / 3);
